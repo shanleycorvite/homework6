@@ -11,4 +11,3 @@ document.querySelector("#play").addEventListener("click", function() {
 document.querySelector("#pause").addEventListener("click", function() {
 	
 });
-
