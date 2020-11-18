@@ -37,15 +37,36 @@ document.querySelector("#skip").addEventListener("click", function() {
 	video.play();
 });
 //mute button//
-function enableMute() { 
-	video.muted = false;
-	this.innerHTML = "Unmute";
-  } 
-  function disableMute() { 
-	video.muted = true;
-	this.innerHTML = "Mute";
-  } 
-
+document.querySelector("#mute").addEventListener("click", function() {
+	if (video.muted) {
+		video.muted = false;
+		this.innerHTML = "Mute";
+	}
+	else{
+		video.muted = true;
+		this.innerHTML = "Unmute";
+	}
+});
 //volume slider//
+document.querySelector("#volumeSlider").addEventListener("change", function() {
+	...
+});
 //old school//
+document.querySelector("#old").addEventListener("click", graycolor() {
+	...
+});
+
+function graycolor() {
+	...
+	console.log("Grayscale")
+}
+
 //original//
+document.querySelector("#original").addEventListener("click", originalcolor() {
+	...
+});
+
+function originalcolor() {
+	...
+	console.log("Color")
+}
