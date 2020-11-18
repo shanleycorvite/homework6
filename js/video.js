@@ -3,26 +3,31 @@ var video;
 window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
 });
+
 //pllay button//
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play()
 });
+
 //pause button//
 document.querySelector("#pause").addEventListener("click", function() {
 	console.log("Pause Video");
 	video.pause()
 });
+
 //slow down//
 document.querySelector("#slower").addEventListener("click", function() {
 	video.playbackRate *=.9;
 	console.log("The speed is "+video.playbackRate);
 });
+
 //speed up//
 document.querySelector("#faster").addEventListener("click", function() {
 	video.playbackRate /=.9;
 	console.log("The speed is "+video.playbackRate);
 });
+
 //skip button//
 document.querySelector("#skip").addEventListener("click", function() {
 	if (video.currentTime < video.duration - 5) {
@@ -36,13 +41,14 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Current location " + video.currentTime);
 	video.play();
 });
+
 //mute button//
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted) {
 		video.muted = false;
 		this.innerHTML = "Mute";
 	}
-	else{
+	else {
 		video.muted = true;
 		this.innerHTML = "Unmute";
 	}
