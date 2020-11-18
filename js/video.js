@@ -54,17 +54,13 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 	console.log(video.volume);
 });
 //old school//
-document.querySelector("#old").addEventListener("click", graycolor() {
-});
-
-function graycolor() {
+document.querySelector("#old").addEventListener("click", function() {
+	video.graycolor = 100%;
 	console.log("Grayscale")
-}
+});
 
 //original//
-document.querySelector("#original").addEventListener("click", originalcolor() {
-});
-
-function originalcolor() {
+document.querySelector("#original").addEventListener("click", function() {
+	video.graycolor = 0%;
 	console.log("Color")
-}
+});
