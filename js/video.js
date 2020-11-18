@@ -55,20 +55,16 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 });
 //old school//
 document.querySelector("#old").addEventListener("click", graycolor() {
-	...
 });
 
 function graycolor() {
-	...
 	console.log("Grayscale")
 }
 
 //original//
 document.querySelector("#original").addEventListener("click", originalcolor() {
-	...
 });
 
 function originalcolor() {
-	...
 	console.log("Color")
 }
