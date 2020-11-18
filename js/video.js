@@ -56,11 +56,13 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 //old school//
 document.querySelector("#old").addEventListener("click", function() {
 	video.graycolor = 100%;
+	video.classList.add("oldTime")
 	console.log("Grayscale")
 });
 
 //original//
 document.querySelector("#original").addEventListener("click", function() {
 	video.graycolor = 0%;
+	video.classList.remove("oldTime")
 	console.log("Color")
 });
