@@ -4,9 +4,10 @@ window.addEventListener("load", function() {
 	video = document.querySelector("#myVideo");
 });
 
-//pllay button//
+//play button//
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
+	volume.innerHTML = "100%"
 	video.play()
 });
 
@@ -18,13 +19,13 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 //slow down//
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate *=.9;
-	console.log("The speed is "+video.playbackRate);
+	video.playbackRate *=.1;
+	console.log("The speed is " + video.playbackRate);
 });
 
 //speed up//
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate /=.9;
+	video.playbackRate /=.1;
 	console.log("The speed is "+video.playbackRate);
 });
 
@@ -53,7 +54,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 		this.innerHTML = "Unmute";
 	}
 });
-/*
+
 //volume slider//
 document.querySelector("#volumeSlider").addEventListener("change", function() {
 	video.volume = this.value/100;
