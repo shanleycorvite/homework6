@@ -19,14 +19,14 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 //slow down//
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate *=.1;
-	console.log("The speed is " + video.playbackRate);
+	video.playbackRate *=.9;
+	console.log("New speed is " + video.playbackRate);
 });
 
 //speed up//
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate /=.1;
-	console.log("The speed is "+video.playbackRate);
+	video.playbackRate /=.9;
+	console.log("New speed is "+video.playbackRate);
 });
 
 //skip button//
@@ -63,14 +63,10 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 });
 //old school//
 document.querySelector("#old").addEventListener("click", function() {
-	video.graycolor = 100%;
 	video.classList.add("oldTime")
-	console.log("Grayscale")
 });
 
 //original//
 document.querySelector("#original").addEventListener("click", function() {
-	video.graycolor = 0%;
 	video.classList.remove("oldTime")
-	console.log("Color")
 });
